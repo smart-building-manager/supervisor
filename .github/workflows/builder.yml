@@ -142,10 +142,10 @@ jobs:
           dir_hash="$(dirhash "${{ github.workspace }}/supervisor" -a sha256 --match "*.py")"
           echo "${dir_hash}" > rootfs/supervisor.sha256
 
-      - name: Sign supervisor SHA256
-        if: needs.init.outputs.publish == 'true'
-        run: |
-          cosign sign-blob --yes rootfs/supervisor.sha256 --bundle rootfs/supervisor.sha256.sig
+      # - name: Sign supervisor SHA256
+      #   if: needs.init.outputs.publish == 'true'
+      #   run: |
+      #     cosign sign-blob --yes rootfs/supervisor.sha256 --bundle rootfs/supervisor.sha256.sig
 
       - name: Login to GitHub Container Registry
         if: needs.init.outputs.publish == 'true'

@@ -236,7 +236,9 @@ class Updater(FileConfiguration, CoreSysAttributes):
             ) from err
 
         # data valid?
-        if not data or data.get(ATTR_CHANNEL) != self.channel:
+        # TODO: have to fix later with different channel
+        # if not data or data.get(ATTR_CHANNEL) != self.channel:
+        if not data:
             raise UpdaterError(f"Invalid data from {url}", _LOGGER.warning)
 
         events = ["supervisor", "core"]

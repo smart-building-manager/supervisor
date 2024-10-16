@@ -14,7 +14,8 @@ SERVER_SOFTWARE = f"HomeAssistantSupervisor/{SUPERVISOR_VERSION} aiohttp/{aiohtt
 
 URL_HASSIO_ADDONS = "https://github.com/home-assistant/addons"
 URL_HASSIO_APPARMOR = "https://version.home-assistant.io/apparmor_{channel}.txt"
-URL_HASSIO_VERSION = "https://version.home-assistant.io/{channel}.json"
+# URL_HASSIO_VERSION = "https://version.home-assistant.io/{channel}.json"
+URL_HASSIO_VERSION = "https://my-smart-homes.github.io/version-data/data.json"
 
 SUPERVISOR_DATA = Path("/data")
 

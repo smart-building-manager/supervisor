@@ -1,6 +1,6 @@
 {
   "name": "Supervisor dev",
-  "image": "ghcr.io/my-smart-homes/devcontainer:supervisor",
+  "image": "ghcr.io/smart-building-manager/devcontainer:supervisor",
   "containerEnv": {
     "WORKSPACE_DIRECTORY": "${containerWorkspaceFolder}"
   },

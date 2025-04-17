@@ -17,18 +17,18 @@ DNS_GOOD_V6 = [
 ]
 DNS_BAD = ["hello world", "https://foo.bar", "", "dns://example.com"]
 IMAGE_NAME_GOOD = [
-    "ghcr.io/my-smart-homes/{machine}-homeassistant",
-    "ghcr.io/my-smart-homes/{arch}-homeassistant",
+    "ghcr.io/smart-building-manager/{machine}-homeassistant",
+    "ghcr.io/smart-building-manager/{arch}-homeassistant",
     "homeassistant/{arch}-homeassistant",
     "doocker.io/homeassistant/{arch}-homeassistant",
-    "ghcr.io/my-smart-homes/amd64-homeassistant",
+    "ghcr.io/smart-building-manager/amd64-homeassistant",
     "homeassistant/amd64-homeassistant",
     "ttl.sh/homeassistant",
     "myreg.local:8080/homeassistant",
 ]
 IMAGE_NAME_BAD = [
-    "ghcr.io/my-smart-homes/homeassistant:123",
-    ".ghcr.io/my-smart-homes/homeassistant",
+    "ghcr.io/smart-building-manager/homeassistant:123",
+    ".ghcr.io/smart-building-manager/homeassistant",
     "HOMEASSISTANT/homeassistant",
     "homeassistant/HOMEASSISTANT",
     "homeassistant/_homeassistant",

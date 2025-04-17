@@ -41,7 +41,7 @@ class PluginBase(ABC, FileConfiguration, CoreSysAttributes):
     def default_image(self) -> str:
         """Return default image for plugin."""
         # return f"ghcr.io/home-assistant/{self.sys_arch.supervisor}-hassio-{self.slug}"
-        return f"ghcr.io/my-smart-homes/{self.sys_arch.supervisor}-hassio-{self.slug}"
+        return f"ghcr.io/smart-building-manager/{self.sys_arch.supervisor}-hassio-{self.slug}"
 
     @property
     def image(self) -> str:

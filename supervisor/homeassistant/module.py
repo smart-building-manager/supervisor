@@ -176,7 +176,7 @@ class HomeAssistant(FileConfiguration, CoreSysAttributes):
     @property
     def default_image(self) -> str:
         """Return the default image for this system."""
-        return f"ghcr.io/my-smart-homes/{self.sys_machine}-my-smart-homes"
+        return f"ghcr.io/smart-building-manager/{self.sys_machine}-smart-building-manager"
 
     @property
     def image(self) -> str:
